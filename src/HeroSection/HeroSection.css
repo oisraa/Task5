@@ -100,13 +100,13 @@
 
   .property-card {
     display: flex;
-    width: 774px;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    width: 774px; /* هذا جيد للشاشات الأكبر */
+    background-color: rgba(255, 255, 255, 0.5); /* الأبيض شبه الشفاف */
     padding: 20px 58px;
     border-radius: 66px;
     margin-top: 50px;
-    height: 100px;
-    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    height: auto; /* اجعل الارتفاع تلقائيًا */
+    backdrop-filter: blur(10px);
 }
 
 
@@ -130,17 +130,17 @@
     .hero-section {
       flex-direction: column;
       align-items: flex-start;
-      padding: 20px; /* Add padding to reduce spacing on smaller screens */
+      padding: 20px; 
     }
   
     .hero-text {
       max-width: 100%;
-      text-align: center; /* Center the text on small screens */
+      text-align: center;
     }
   
     .hero-text h1 {
       font-size: 2rem;
-      width: 100%; /* Ensure the heading takes the full width of the screen */
+      width: 100%; 
       line-height: normal;
     }
   
@@ -150,23 +150,38 @@
     }
   
     .hero-image {
-      display: none; /* Hide the image on small screens */
+      display: none; 
     }
   
     .property-card {
-      flex-direction: column; /* Stack the property card items vertically */
-      padding: 20px;
-      width: 100%; /* Make the property card take full width */
-    }
-  
-    .icon-group {
-      flex-direction: column; /* Stack the icons vertically */
-      gap: 10px; /* Adjust the gap between icons */
-    }
-  
-    .icon-item {
-      justify-content: center; /* Center the icons and text */
-    }
+      flex-direction: column; 
+      width: 90%; 
+      padding: 20px; 
+      margin: 30px auto; 
+      border-radius: none;
+  }
+
+  .icon-group {
+      flex-direction: column;
+      gap: 10px; 
+  }
+
+  .icon-item {
+      justify-content: flex-start; 
+      align-items: flex-start; 
+  }
+
+  .icon-item span {
+      font-size: 1rem; 
+      line-height: 1.2;
+      text-align: left; 
+      margin-bottom: 10px;
+      
+  }
+
+  .icons {
+      margin-right: 10px; 
+  }
   }
   
   /* Further adjustments for screens with a minimum width of 300px */
@@ -178,25 +193,26 @@
     .hero-text p {
       font-size: 0.9rem;
     }
-  
     .property-card {
-      padding: 10px;
-    }
-  
-    .icon-item span {
-      font-size: 0.9rem; /* Adjust the font size of the text in the icons */
-    }
+      padding: 10px; 
+      border-radius: none;
+  }
+
+  .icon-item span {
+      font-size: 0.9rem; 
+  }
     
   .hero-image {
-    display: block; /* Ensure the image is visible on smaller screens */
+    display: block; 
     position: absolute;
     
     width: 100%;
     height: 100%; /* Make the image cover the whole section */
-    object-fit: cover; /* Ensures the image scales properly without distortion */
-    z-index: -1; /* Keep it behind the other elements */
-    opacity: 0.3; /* Optional: transparency for visibility */
+    object-fit: cover; 
+    z-index: -1; 
+    opacity: 0.3; 
   }
 
   }
+  
   
