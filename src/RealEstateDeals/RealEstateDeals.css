@@ -1,0 +1,131 @@
+/* Container for the real estate deals section */
+.real-estate-container {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.fortexts {
+    width: 530px;
+    height: 78px;
+}
+
+.real-estate-title {
+    font-size: 28px; /* Smaller font for mobile */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.real-estate-subtitle {
+    font-size: 14px; /* Slightly smaller subtitle for mobile */
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Category navigation styling */
+.real-estate-categories {
+    display: flex;
+    margin-left: 81px;
+    margin-bottom: 20px;
+}
+
+.real-estate-btn {
+    padding: 8px 16px; /* Reduced padding for mobile */
+    margin: 0 5px; /* Smaller margin for mobile */
+    border: none;
+    background-color: transparent;
+    font-size: 18px; /* Slightly smaller text for mobile */
+    color: #222222;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.real-estate-btn:hover,
+.real-estate-btn-active {
+    color: #007bff; /* Active and hover state */
+    border-bottom: 3px solid #007bff;
+}
+
+/* Grid layout for properties */
+.real-estate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px; /* Gap between images for larger screens */
+    margin-left: 95px;
+}
+
+/* Each individual card for properties */
+.real-estate-card {
+    width: 100%; /* Full width for mobile screens */
+    max-width: 300px; /* Limit the card width on larger screens */
+    position: relative;
+}
+
+.real-estate-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Label on the top left of the property image */
+.real-estate-label {
+    position: absolute;
+    top: 8px;
+    left: 10px; /* Adjusted for smaller screens */
+    display: flex;
+    gap: 5px;
+}
+
+.real-estate-label span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Media Query for mobile devices (min width 300px) */
+@media (min-width: 300px) and (max-width: 768px) {
+    .real-estate-container {
+        padding: 20px 0; /* Reduced padding for mobile */
+    }
+
+    .fortexts {
+        width: 90%; /* Text container shrinks to 90% for smaller screens */
+        margin: 0 auto;
+    }
+
+    .real-estate-title {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .real-estate-subtitle {
+        font-size: 14px;
+    }
+
+    .real-estate-btn {
+        font-size: 16px; /* Smaller font for mobile */
+        padding: 8px 12px; /* Smaller padding for mobile */
+        line-height: 21.78px;
+        color: #222222;
+    }
+
+    .real-estate-categories {
+        flex-direction: column; /* Stack category buttons on top of each other */
+        margin-left: 0; /* Remove unnecessary left margin */
+    }
+
+    .real-estate-grid {
+        gap: 15px; /* Smaller gap between images for mobile screens */
+        margin-left: 0; /* Center the grid on smaller screens */
+        justify-content: center; /* Center images on small screens */
+    }
+
+    .real-estate-card {
+        max-width: 100%; /* Full width for small screens */
+        margin: 0 auto; /* Center cards on mobile */
+    }
+
+    .real-estate-card img {
+        max-width: 100%; /* Ensure images scale down on smaller screens */
+    }
+}

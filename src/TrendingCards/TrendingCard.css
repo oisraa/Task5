@@ -1,0 +1,120 @@
+/* Trending Card */
+.trending-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.trending-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%; /* Make sure it adapts to any screen size */
+  height: auto; /* Auto height for flexibility */
+  max-height: 243px; /* Keep a max height for larger screens */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #025595;
+  line-height: 28px;
+  margin-left: 20px; /* 20px distance from left */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 28px;
+  margin-left: 20px; /* 20px distance from left */
+}
+
+.p2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.p3 {
+  margin-top: 0;
+}
+
+.card-address {
+  font-size: 14px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  width: 100%; /* Take full width of the card */
+  margin-left: 20px; /* 20px distance from left */
+}
+
+.location-icon {
+  margin-right: 8px;
+  display: inline-block;
+  width: 23.52px;
+  height: 24px;
+  background-image: url('/src/assets/img/location.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .trending-card {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-price {
+    font-size: 16px;
+    margin-left: 15px; /* Adjust margin for small screens */
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .card-address {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+}
+
+/* For extra small screens (min-width: 300px) */
+@media (min-width: 330px) {
+  .trending-card {
+    padding: 10px;
+  }
+
+  .card-image {
+    height: 150px; /* Adjust image height for small screens */
+  }
+
+  .card-price, .card-title, .card-address {
+    font-size: 14px; /* Smaller font sizes for small screens */
+    margin-left: 10px; /* Adjust margins for small screens */
+  }
+
+  .card-address {
+    margin-top: 20px; /* Adjust margin-top for small screens */
+  }
+}

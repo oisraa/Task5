@@ -1,0 +1,202 @@
+/* .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    background-size: cover;
+    padding: 0 70px;
+    color: #333;
+    background-color: var(--primary-blue);
+  }
+  
+
+  
+  .hero h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    width: 549px;
+    color: #222222;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #22222280;
+    top: 20px;
+  }
+  
+  .property-card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 58px;
+    border-radius: 10px;
+    width: 750px;
+  }
+  
+  .icon-group {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 213.87px;
+  }
+  
+  .icon-item img {
+    width: 30px;
+    height: 30px; */
+    /* background-color: rgb(243, 241, 241);
+    border-radius:20px ; */
+  /* }
+  .h3 .txt{
+    font-size: 16px;
+    color: #222222;
+    width: 134px;
+  } */
+  /* Media query for small screens (up to 320px wide) */
+/* @media (max-width: 320px) {
+    .hero h1 { */
+        /* font-size: 35px; 
+        width: 320px;
+        padding: 0 20px;
+       align-items: center; */
+/* }
+
+}*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background-color: var(--primary-blue);
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: 549px;
+    line-height: 80px;
+    color: #222222;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #22222280;
+  }
+  
+  .hero-image img {
+    max-width: 1231px;
+  }
+
+  .property-card {
+    display: flex;
+    width: 774px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    padding: 20px 58px;
+    border-radius: 66px;
+    margin-top: 50px;
+    height: 100px;
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+}
+
+
+  
+  .icon-group {
+    display: flex;
+    gap:63px;
+  }
+  
+  .icon-item {
+    display: flex;
+    align-items: center;
+   
+  }
+  .icons{
+    margin-right: 15px;
+  }
+  
+  /* Responsive Design for small screens */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px; /* Add padding to reduce spacing on smaller screens */
+    }
+  
+    .hero-text {
+      max-width: 100%;
+      text-align: center; /* Center the text on small screens */
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+      width: 100%; /* Ensure the heading takes the full width of the screen */
+      line-height: normal;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  
+    .hero-image {
+      display: none; /* Hide the image on small screens */
+    }
+  
+    .property-card {
+      flex-direction: column; /* Stack the property card items vertically */
+      padding: 20px;
+      width: 100%; /* Make the property card take full width */
+    }
+  
+    .icon-group {
+      flex-direction: column; /* Stack the icons vertically */
+      gap: 10px; /* Adjust the gap between icons */
+    }
+  
+    .icon-item {
+      justify-content: center; /* Center the icons and text */
+    }
+  }
+  
+  /* Further adjustments for screens with a minimum width of 300px */
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1.5rem; /* Further reduce font size */
+    }
+  
+    .hero-text p {
+      font-size: 0.9rem;
+    }
+  
+    .property-card {
+      padding: 10px;
+    }
+  
+    .icon-item span {
+      font-size: 0.9rem; /* Adjust the font size of the text in the icons */
+    }
+    
+  .hero-image {
+    display: block; /* Ensure the image is visible on smaller screens */
+    position: absolute;
+    
+    width: 100%;
+    height: 100%; /* Make the image cover the whole section */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    z-index: -1; /* Keep it behind the other elements */
+    opacity: 0.3; /* Optional: transparency for visibility */
+  }
+
+  }
+  

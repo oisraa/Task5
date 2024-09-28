@@ -1,0 +1,106 @@
+.how-it-works {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .how-it-works h2 {
+    color: #222222; /* Heading text color */
+    size: 39px;
+    width: 253px;
+    line-height: 47.2px;
+  }
+  
+  .step-box {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+   
+  }
+  /* Step box description paragraph */
+.step-box p {
+    font-size: 1rem;
+    color: #666; 
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .text {
+    color: #22222280;
+    font-size: 15px; /* Change 'size' to 'font-size' */
+    width: 382px;
+    margin-right: 700px; /* Ensure no left margin */
+    text-align: left; /* Align text to the left */
+}
+
+  .step-box:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+  }
+  
+  .selected-step .step-box {
+    background-color: #025595; /* Blue background for selected step */
+    color: #fff ; /* White text */
+  }
+  .selected-step p {
+    color: white !important; /* Set the color of <p> to white for the second card */
+  }
+  .p9{
+margin-top: 0;
+  }
+  .step-box .icon {
+    font-size: 2rem;
+    color: #0056b3; /* Icon color */
+  }
+  
+  .selected-step .icon {
+    color: #fff; /* White icon for selected step */
+  }
+  
+  .title-h .title{
+    font-size: 22px;
+    font-weight: 600;
+}
+  @media (max-width: 768px) {
+    /* Mobile specific styles */
+    .step-box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for small screens (min-width: 300px) */
+@media (min-width: 300px) {
+    /* General container for small screens */
+    .how-it-works {
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .step-box {
+      width: 100%; /* Full width for step boxes */
+      margin-bottom: 20px; /* Add spacing between steps */
+      padding: 15px; /* Slightly reduce padding inside step boxes */
+    }
+  
+    /* Title styling */
+    .how-it-works-title {
+      font-size: 1.5rem; /* Slightly smaller title size */
+    }
+  
+    /* Text under the title */
+    .how-it-works-description {
+      font-size: 1rem; /* Adjust font size for better readability */
+      max-width: 100%; /* Make sure it takes full width */
+    }
+  
+    /* Step box title */
+    .step-box h4 {
+      font-size: 1.2rem; /* Smaller font size for the step title */
+    }
+  
+    /* Step box description */
+    .step-box p {
+      font-size: 0.9rem; /* Smaller paragraph text */
+      color: #666; /* Lighter text color */
+    }
+  
+    /* Adjust icons */
+    .step-box .icon img {
+      max-width: 50px; /* Resize icons for small screens */
+    }
+  }
+  

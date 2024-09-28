@@ -1,0 +1,39 @@
+nav{
+    height: 90px;
+    background-color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: 500;
+}
+nav .login{
+    width: 135px;
+    height: 38px;
+    background-color: #025595;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #F5F5F5;
+    border:none ;
+}
+nav .menubtn{
+    border: none;
+    background: none;
+    display: none;
+}
+@media screen and (max-width : 992px){
+    nav .login , nav ul {
+        display: none;
+    }
+    nav .menubtn{
+        display: block;
+    }
+    
+}

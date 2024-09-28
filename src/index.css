@@ -1,0 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+
+}
+:root {
+  --primary-blue: #edf6ff; /* Replace this with the exact blue color from your design */
+}
